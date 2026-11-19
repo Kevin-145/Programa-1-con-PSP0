@@ -1,0 +1,228 @@
+﻿================================================================
+EVIDENCIA DE EJECUCION MANUAL DE CASOS DE PRUEBA EN CONSOLA
+Programa 1 · PSP0 - Media y Desviacion Estandar
+Fecha de ejecucion: 19 de noviembre de 2026
+Binario: src\Programa1.Estadistica\bin\Debug\net9.0\Programa1.exe
+================================================================
+
+----------------------------------------------------------------
+CASO DE PRUEBA: CP-01 - Tabla 1 Columna 1 (10 valores tamano proxy)
+Comando: src\Programa1.Estadistica\bin\Debug\net9.0\Programa1.exe datos/columna1_tamano_proxy.txt
+Codigo de salida: 0
+Salida capturada:
+==================================================
+ PSP0 · Programa 1 — Media y desviación estándar
+==================================================
+Archivo leído : datos/columna1_tamano_proxy.txt
+Datos (n)     : 10
+Media         : 550.60
+Desv. estándar: 572.03
+
+----------------------------------------------------------------
+CASO DE PRUEBA: CP-02 - Tabla 1 Columna 2 (10 valores horas de desarrollo)
+Comando: src\Programa1.Estadistica\bin\Debug\net9.0\Programa1.exe datos/columna2_horas.txt
+Codigo de salida: 0
+Salida capturada:
+==================================================
+ PSP0 · Programa 1 — Media y desviación estándar
+==================================================
+Archivo leído : datos/columna2_horas.txt
+Datos (n)     : 10
+Media         : 60.32
+Desv. estándar: 62.26
+
+----------------------------------------------------------------
+CASO DE PRUEBA: CP-03 - Tabla 3 del Kit (10 valores de prueba)
+Comando: src\Programa1.Estadistica\bin\Debug\net9.0\Programa1.exe datos/tabla3_ejemplo.txt
+Codigo de salida: 0
+Salida capturada:
+==================================================
+ PSP0 · Programa 1 — Media y desviación estándar
+==================================================
+Archivo leído : datos/tabla3_ejemplo.txt
+Datos (n)     : 10
+Media         : 638.90
+Desv. estándar: 625.63
+
+----------------------------------------------------------------
+CASO DE PRUEBA: CP-04 - Archivo vacio (limite n=0)
+Comando: src\Programa1.Estadistica\bin\Debug\net9.0\Programa1.exe datos/pruebas_borde/vacio.txt
+Codigo de salida: 1
+Salida capturada:
+==================================================
+ PSP0 · Programa 1 — Media y desviación estándar
+==================================================
+ERROR: El archivo no contiene datos. Escriba un número por línea.
+
+----------------------------------------------------------------
+CASO DE PRUEBA: CP-05 - Archivo con un solo dato (42.5, limite n=1)
+Comando: src\Programa1.Estadistica\bin\Debug\net9.0\Programa1.exe datos/pruebas_borde/un_dato.txt
+Codigo de salida: 0
+Salida capturada:
+==================================================
+ PSP0 · Programa 1 — Media y desviación estándar
+==================================================
+Archivo leído : datos/pruebas_borde/un_dato.txt
+Datos (n)     : 1
+Media         : 42.50
+Desv. estándar: no definida (se necesitan al menos 2 datos)
+
+----------------------------------------------------------------
+CASO DE PRUEBA: CP-06 - Valores identicos sin dispersion (7, 7, 7, 7)
+Comando: src\Programa1.Estadistica\bin\Debug\net9.0\Programa1.exe datos/pruebas_borde/sin_dispersion.txt
+Codigo de salida: 0
+Salida capturada:
+==================================================
+ PSP0 · Programa 1 — Media y desviación estándar
+==================================================
+Archivo leído : datos/pruebas_borde/sin_dispersion.txt
+Datos (n)     : 4
+Media         : 7.00
+Desv. estándar: 0.00
+
+----------------------------------------------------------------
+CASO DE PRUEBA: CP-07 - Valores negativos y decimales (-2.5, 0, 2.5)
+Comando: src\Programa1.Estadistica\bin\Debug\net9.0\Programa1.exe datos/pruebas_borde/negativos_decimales.txt
+Codigo de salida: 0
+Salida capturada:
+==================================================
+ PSP0 · Programa 1 — Media y desviación estándar
+==================================================
+Archivo leído : datos/pruebas_borde/negativos_decimales.txt
+Datos (n)     : 3
+Media         : 0.00
+Desv. estándar: 2.50
+
+----------------------------------------------------------------
+CASO DE PRUEBA: CP-08 - Orden de insercion y conteo en ListaEnlazada (3, 1, 2)
+Comando: src\Programa1.Estadistica\bin\Debug\net9.0\Programa1.exe datos/pruebas_borde/orden_tres.txt
+Codigo de salida: 0
+Salida capturada:
+==================================================
+ PSP0 · Programa 1 — Media y desviación estándar
+==================================================
+Archivo leído : datos/pruebas_borde/orden_tres.txt
+Datos (n)     : 3
+Media         : 2.00
+Desv. estándar: 1.00
+
+----------------------------------------------------------------
+CASO DE PRUEBA: CP-09 - Lineas en blanco intercaladas (10, blank, 20)
+Comando: src\Programa1.Estadistica\bin\Debug\net9.0\Programa1.exe datos/pruebas_borde/lineas_en_blanco.txt
+Codigo de salida: 0
+Salida capturada:
+==================================================
+ PSP0 · Programa 1 — Media y desviación estándar
+==================================================
+Archivo leído : datos/pruebas_borde/lineas_en_blanco.txt
+Datos (n)     : 2
+Media         : 15.00
+Desv. estándar: 7.07
+
+----------------------------------------------------------------
+CASO DE PRUEBA: CP-10 - Dato no numerico en linea intermedia (1, 2, abc)
+Comando: src\Programa1.Estadistica\bin\Debug\net9.0\Programa1.exe datos/pruebas_borde/dato_no_numerico.txt
+Codigo de salida: 1
+Salida capturada:
+==================================================
+ PSP0 · Programa 1 — Media y desviación estándar
+==================================================
+ERROR: Línea 3: «abc» no es un número real. Use punto decimal (ej. 15.0).
+
+----------------------------------------------------------------
+CASO DE PRUEBA: CP-11 - Archivo con solo espacios en blanco
+Comando: src\Programa1.Estadistica\bin\Debug\net9.0\Programa1.exe datos/pruebas_borde/solo_espacios.txt
+Codigo de salida: 1
+Salida capturada:
+==================================================
+ PSP0 · Programa 1 — Media y desviación estándar
+==================================================
+ERROR: El archivo no contiene datos. Escriba un número por línea.
+
+----------------------------------------------------------------
+CASO DE PRUEBA: CP-12 - Ruta de archivo inexistente
+Comando: src\Programa1.Estadistica\bin\Debug\net9.0\Programa1.exe datos/no_existe_archivo_xyz.txt
+Codigo de salida: 1
+Salida capturada:
+==================================================
+ PSP0 · Programa 1 — Media y desviación estándar
+==================================================
+ERROR: No se encontró el archivo «datos/no_existe_archivo_xyz.txt». Revise la ruta.
+
+----------------------------------------------------------------
+CASO DE PRUEBA: CP-13 - Punto decimal bajo cultura regional es-CO (15.0, 6.5)
+Comando: src\Programa1.Estadistica\bin\Debug\net9.0\Programa1.exe datos/pruebas_borde/cultura_invariante.txt
+Codigo de salida: 0
+Salida capturada:
+==================================================
+ PSP0 · Programa 1 — Media y desviación estándar
+==================================================
+Archivo leído : datos/pruebas_borde/cultura_invariante.txt
+Datos (n)     : 2
+Media         : 10.75
+Desv. estándar: 6.01
+
+----------------------------------------------------------------
+CASO DE PRUEBA: CP-14 - Integracion leyendo archivo real de datos (columna2)
+Comando: src\Programa1.Estadistica\bin\Debug\net9.0\Programa1.exe datos/columna2_horas.txt
+Codigo de salida: 0
+Salida capturada:
+==================================================
+ PSP0 · Programa 1 — Media y desviación estándar
+==================================================
+Archivo leído : datos/columna2_horas.txt
+Datos (n)     : 10
+Media         : 60.32
+Desv. estándar: 62.26
+
+----------------------------------------------------------------
+CASO DE PRUEBA: CP-15 - Paso de ruta por argumento de linea de comandos
+Comando: src\Programa1.Estadistica\bin\Debug\net9.0\Programa1.exe datos/columna1_tamano_proxy.txt
+Codigo de salida: 0
+Salida capturada:
+==================================================
+ PSP0 · Programa 1 — Media y desviación estándar
+==================================================
+Archivo leído : datos/columna1_tamano_proxy.txt
+Datos (n)     : 10
+Media         : 550.60
+Desv. estándar: 572.03
+
+----------------------------------------------------------------
+CASO DE PRUEBA: CP-16 - Solicitud interactiva de ruta por consola
+Comando: src\Programa1.Estadistica\bin\Debug\net9.0\Programa1.exe 
+Entrada stdin: datos/pruebas_borde/un_dato.txt
+Codigo de salida: 0
+Salida capturada:
+==================================================
+ PSP0 · Programa 1 — Media y desviación estándar
+==================================================
+Ruta del archivo de datos (un número por línea): Archivo leído : datos/pruebas_borde/un_dato.txt
+Datos (n)     : 1
+Media         : 42.50
+Desv. estándar: no definida (se necesitan al menos 2 datos)
+
+----------------------------------------------------------------
+CASO DE PRUEBA: CP-17 - Manejo de archivo vacio por entrada interactiva
+Comando: src\Programa1.Estadistica\bin\Debug\net9.0\Programa1.exe 
+Entrada stdin: datos/pruebas_borde/vacio.txt
+Codigo de salida: 1
+Salida capturada:
+==================================================
+ PSP0 · Programa 1 — Media y desviación estándar
+==================================================
+Ruta del archivo de datos (un número por línea): ERROR: El archivo no contiene datos. Escriba un número por línea.
+
+----------------------------------------------------------------
+CASO DE PRUEBA: CP-18 - Manejo de archivo con un solo dato por consola
+Comando: src\Programa1.Estadistica\bin\Debug\net9.0\Programa1.exe datos/pruebas_borde/un_dato.txt
+Codigo de salida: 0
+Salida capturada:
+==================================================
+ PSP0 · Programa 1 — Media y desviación estándar
+==================================================
+Archivo leído : datos/pruebas_borde/un_dato.txt
+Datos (n)     : 1
+Media         : 42.50
+Desv. estándar: no definida (se necesitan al menos 2 datos)
+
