@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1220" height="1104" viewBox="0 0 1220 1104" font-family="Segoe UI, Arial, sans-serif">
+<title>Flujo del proceso PSP0 · qué hacer, qué entregar y qué registrar</title>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="context-stroke"/></marker>
+<style>.T{font-size:20px;font-weight:700;fill:#1d3557}.in{font-size:13px;fill:#1d3557;font-weight:600}.in2{font-size:12px;fill:#455a64}
+.num{font-size:12px;font-weight:700;fill:#1d3557}.ph{font-size:15px;font-weight:700;fill:#fff}.pc{font-size:11px;fill:#fff;opacity:.9}
+.td{font-size:12.5px;fill:#222}.lbl{font-size:11px;font-weight:700;fill:#6b7785;letter-spacing:.06em}.dl{font-size:12.5px;fill:#222}
+.git{font-family:Consolas,"DejaVu Sans Mono",monospace;font-size:11.5px;fill:#2e7d4f}.tk{font-size:12px;fill:#333}
+.g{font-size:10.5px;fill:#7a4a00;font-weight:600}.gn{font-size:11px;fill:#b26a00;font-style:italic}.ch{font-size:12px;font-weight:700;fill:#6b7785;letter-spacing:.08em}
+.dv{font-size:11px;font-weight:700;fill:#8a99aa;letter-spacing:.1em}.fin{font-size:14px;font-weight:700;fill:#fff}</style></defs>
+<rect width="100%" height="100%" fill="#fbfcfe"/>
+<text x="30" y="40" class="T">Proceso PSP0 · qué hacer, qué entregar y qué registrar en cada fase</text>
+<rect x="30" y="64" width="1160" height="52" rx="8" fill="#eef3f8" stroke="#c9d3df"/>
+<text x="48" y="86" class="in">Entradas: enunciado del Assignment Kit (Programa 1) · formularios PSP0 · estándar de tipos de defecto · PSP Tracker abierto</text>
+<text x="48" y="106" class="in2">Regla de oro: cada fase se cronometra en el Time Log y cada defecto se anota en el Defect Log en el momento en que se encuentra.</text>
+<rect x="44" y="286" width="332" height="582" rx="10" fill="none" stroke="#8a99aa" stroke-dasharray="4 4"/>
+<text x="52" y="280" class="dv">DESARROLLO</text>
+<rect x="60" y="150" width="300" height="104" rx="10" fill="#fff" stroke="#2f5d8a" stroke-width="2"/>
+<rect x="60" y="150" width="300" height="30" rx="10" fill="#2f5d8a"/><rect x="60" y="170" width="300" height="10" fill="#2f5d8a"/>
+<circle cx="78" cy="165" r="10" fill="#fff"/>
+<text x="78" y="170" class="num" text-anchor="middle">1</text>
+<text x="96" y="171" class="ph">Planeación</text>
+<text x="350" y="171" class="pc" text-anchor="end">fase PLAN</text>
+<text x="72" y="202" class="td">• Leer el enunciado y resolver dudas</text>
+<text x="72" y="220" class="td">• Escribir RF y RNF con criterio de aceptación</text>
+<text x="72" y="238" class="td">• Estimar minutos por fase (+ contingencia)</text>
+<rect x="580" y="158" width="330" height="88" rx="8" fill="#fff" stroke="#c9d3df"/>
+<rect x="580" y="158" width="6" height="88" fill="#2f5d8a"/>
+<text x="596" y="180" class="lbl">Entregable</text>
+<text x="596" y="200" class="dl">requisitos.md · estimacion.md</text>
+<text x="596" y="218" class="dl">PPS: tiempo planeado (300 min)</text>
+<text x="596" y="240" class="git">git commit -m "planeacion: …"</text>
+<path d="M360,202.0 H580" stroke="#2f5d8a" stroke-width="1.2" stroke-dasharray="3 3" fill="none"/>
+<rect x="930" y="158" width="250" height="88" rx="8" fill="#f7f9fb" stroke="#c9d3df"/>
+<text x="942" y="180" class="lbl">PSP Tracker</text>
+<text x="942" y="200" class="tk">▶ cronómetro fase Planificación</text>
+<text x="942" y="218" class="tk">Proyecto PSP0 · plan 300 min</text>
+<rect x="60" y="300" width="300" height="104" rx="10" fill="#fff" stroke="#7a4f9a" stroke-width="2"/>
+<rect x="60" y="300" width="300" height="30" rx="10" fill="#7a4f9a"/><rect x="60" y="320" width="300" height="10" fill="#7a4f9a"/>
+<circle cx="78" cy="315" r="10" fill="#fff"/>
+<text x="78" y="320" class="num" text-anchor="middle">2</text>
+<text x="96" y="321" class="ph">Diseño</text>
+<text x="350" y="321" class="pc" text-anchor="end">fase DLD</text>
+<text x="72" y="352" class="td">• Pseudocódigo y traza de escritorio</text>
+<text x="72" y="370" class="td">• UML de clases y arquitectura</text>
+<text x="72" y="388" class="td">• Interfaz y datos (BD si aplica)</text>
+<rect x="580" y="308" width="330" height="88" rx="8" fill="#fff" stroke="#c9d3df"/>
+<rect x="580" y="308" width="6" height="88" fill="#7a4f9a"/>
+<text x="596" y="330" class="lbl">Entregable</text>
+<text x="596" y="350" class="dl">pseudocodigo.md · diseno.md</text>
+<text x="596" y="368" class="dl">SVG: clases, capas, flujo, interfaz</text>
+<text x="596" y="390" class="git">git commit -m "diseno: …"</text>
+<path d="M360,352.0 H580" stroke="#7a4f9a" stroke-width="1.2" stroke-dasharray="3 3" fill="none"/>
+<rect x="930" y="308" width="250" height="88" rx="8" fill="#f7f9fb" stroke="#c9d3df"/>
+<text x="942" y="330" class="lbl">PSP Tracker</text>
+<text x="942" y="350" class="tk">▶ fase Diseño</text>
+<text x="942" y="368" class="tk">Defectos de requisitos → aquí</text>
+<rect x="60" y="450" width="300" height="104" rx="10" fill="#fff" stroke="#b26a00" stroke-width="2"/>
+<rect x="60" y="450" width="300" height="30" rx="10" fill="#b26a00"/><rect x="60" y="470" width="300" height="10" fill="#b26a00"/>
+<circle cx="78" cy="465" r="10" fill="#fff"/>
+<text x="78" y="470" class="num" text-anchor="middle">3</text>
+<text x="96" y="471" class="ph">Código</text>
+<text x="350" y="471" class="pc" text-anchor="end">fase CODE</text>
+<text x="72" y="502" class="td">• Implementar el diseño, capa por capa</text>
+<text x="72" y="520" class="td">• Aplicar el estándar de codificación</text>
+<text x="72" y="538" class="td">• No compilar todavía: terminar el código</text>
+<rect x="580" y="458" width="330" height="88" rx="8" fill="#fff" stroke="#c9d3df"/>
+<rect x="580" y="458" width="6" height="88" fill="#b26a00"/>
+<text x="596" y="480" class="lbl">Entregable</text>
+<text x="596" y="500" class="dl">src/ (C# .NET 9)</text>
+<text x="596" y="518" class="dl">estandar_codificacion.md</text>
+<text x="596" y="540" class="git">git commit -m "codigo: …"</text>
+<path d="M360,502.0 H580" stroke="#b26a00" stroke-width="1.2" stroke-dasharray="3 3" fill="none"/>
+<rect x="930" y="458" width="250" height="88" rx="8" fill="#f7f9fb" stroke="#c9d3df"/>
+<text x="942" y="480" class="lbl">PSP Tracker</text>
+<text x="942" y="500" class="tk">▶ fase Código</text>
+<text x="942" y="518" class="tk">(2 sesiones; anote interrupciones)</text>
+<rect x="60" y="600" width="300" height="104" rx="10" fill="#fff" stroke="#9a3b3b" stroke-width="2"/>
+<rect x="60" y="600" width="300" height="30" rx="10" fill="#9a3b3b"/><rect x="60" y="620" width="300" height="10" fill="#9a3b3b"/>
+<circle cx="78" cy="615" r="10" fill="#fff"/>
+<text x="78" y="620" class="num" text-anchor="middle">4</text>
+<text x="96" y="621" class="ph">Compilación</text>
+<text x="350" y="621" class="pc" text-anchor="end">fase COMPILE</text>
+<text x="72" y="652" class="td">• Compilar y leer cada error CSxxxx</text>
+<text x="72" y="670" class="td">• Registrar un defecto por error</text>
+<text x="72" y="688" class="td">• Corregir y volver a compilar</text>
+<rect x="580" y="608" width="330" height="88" rx="8" fill="#fff" stroke="#c9d3df"/>
+<rect x="580" y="608" width="6" height="88" fill="#9a3b3b"/>
+<text x="596" y="630" class="lbl">Entregable</text>
+<text x="596" y="650" class="dl">Defect Log (fase Compilación)</text>
+<text x="596" y="668" class="dl">0 errores, 0 advertencias</text>
+<text x="596" y="690" class="git">git commit -m "compilacion: …"</text>
+<path d="M360,652.0 H580" stroke="#9a3b3b" stroke-width="1.2" stroke-dasharray="3 3" fill="none"/>
+<rect x="930" y="608" width="250" height="88" rx="8" fill="#f7f9fb" stroke="#c9d3df"/>
+<text x="942" y="630" class="lbl">PSP Tracker</text>
+<text x="942" y="650" class="tk">▶ fase Compilación</text>
+<text x="942" y="668" class="tk">1 defecto por error · tipo 20/30/40</text>
+<rect x="60" y="750" width="300" height="104" rx="10" fill="#fff" stroke="#2e7d4f" stroke-width="2"/>
+<rect x="60" y="750" width="300" height="30" rx="10" fill="#2e7d4f"/><rect x="60" y="770" width="300" height="10" fill="#2e7d4f"/>
+<circle cx="78" cy="765" r="10" fill="#fff"/>
+<text x="78" y="770" class="num" text-anchor="middle">5</text>
+<text x="96" y="771" class="ph">Pruebas</text>
+<text x="350" y="771" class="pc" text-anchor="end">fase TEST</text>
+<text x="72" y="802" class="td">• Diseñar casos desde RF/RNF</text>
+<text x="72" y="820" class="td">• Ejecutar (dotnet test) y comparar</text>
+<text x="72" y="838" class="td">• Registrar y corregir cada falla</text>
+<rect x="580" y="758" width="330" height="88" rx="8" fill="#fff" stroke="#c9d3df"/>
+<rect x="580" y="758" width="6" height="88" fill="#2e7d4f"/>
+<text x="596" y="780" class="lbl">Entregable</text>
+<text x="596" y="800" class="dl">casos_prueba.md · informe_pruebas.md</text>
+<text x="596" y="818" class="dl">Defect Log (fase Pruebas)</text>
+<text x="596" y="840" class="git">git commit -m "pruebas: …"</text>
+<path d="M360,802.0 H580" stroke="#2e7d4f" stroke-width="1.2" stroke-dasharray="3 3" fill="none"/>
+<rect x="930" y="758" width="250" height="88" rx="8" fill="#f7f9fb" stroke="#c9d3df"/>
+<text x="942" y="780" class="lbl">PSP Tracker</text>
+<text x="942" y="800" class="tk">▶ fase Pruebas</text>
+<text x="942" y="818" class="tk">defectos tipo 70/80 · Fix Ref</text>
+<rect x="60" y="900" width="300" height="104" rx="10" fill="#fff" stroke="#455a64" stroke-width="2"/>
+<rect x="60" y="900" width="300" height="30" rx="10" fill="#455a64"/><rect x="60" y="920" width="300" height="10" fill="#455a64"/>
+<circle cx="78" cy="915" r="10" fill="#fff"/>
+<text x="78" y="920" class="num" text-anchor="middle">6</text>
+<text x="96" y="921" class="ph">Postmortem</text>
+<text x="350" y="921" class="pc" text-anchor="end">fase PM</text>
+<text x="72" y="952" class="td">• Totales plan vs. real</text>
+<text x="72" y="970" class="td">• Defectos inyectados/eliminados</text>
+<text x="72" y="988" class="td">• PIP: problema → propuesta</text>
+<rect x="580" y="908" width="330" height="88" rx="8" fill="#fff" stroke="#c9d3df"/>
+<rect x="580" y="908" width="6" height="88" fill="#455a64"/>
+<text x="596" y="930" class="lbl">Entregable</text>
+<text x="596" y="950" class="dl">resumen_pps.md · pip.md</text>
+<text x="596" y="968" class="dl">Sincronizar con PSP Monitor</text>
+<text x="596" y="990" class="git">git commit -m "postmortem: …"</text>
+<path d="M360,952.0 H580" stroke="#455a64" stroke-width="1.2" stroke-dasharray="3 3" fill="none"/>
+<rect x="930" y="908" width="250" height="88" rx="8" fill="#f7f9fb" stroke="#c9d3df"/>
+<text x="942" y="930" class="lbl">PSP Tracker</text>
+<text x="942" y="950" class="tk">▶ fase Post-Mortem</text>
+<text x="942" y="968" class="tk">Completar · Sincronizar</text>
+<path d="M210.0,254 V298" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#a)"/>
+<path d="M210.0,404 V448" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#a)"/>
+<path d="M210.0,554 V598" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#a)"/>
+<path d="M210.0,704 V748" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#a)"/>
+<path d="M210.0,854 V898" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#a)"/>
+<path d="M428,257.0 L486,277.0 L428,297.0 L370,277.0 Z" fill="#fff8e6" stroke="#b26a00"/>
+<text x="428" y="275.0" class="g" text-anchor="middle">¿plan</text>
+<text x="428" y="288.0" class="g" text-anchor="middle">aprobado?</text>
+<path d="M211.0,277.0 H370" stroke="#b26a00" stroke-width="1.2" fill="none"/>
+<path d="M428,257.0 V216.0 H362" fill="none" stroke="#b26a00" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#a)"/>
+<text x="436" y="210.0" class="g"></text>
+<text x="490" y="281.0" class="gn">no → ajustar</text>
+<path d="M428,707.0 L486,727.0 L428,747.0 L370,727.0 Z" fill="#fff8e6" stroke="#b26a00"/>
+<text x="428" y="725.0" class="g" text-anchor="middle">¿compila</text>
+<text x="428" y="738.0" class="g" text-anchor="middle">sin errores?</text>
+<path d="M211.0,727.0 H370" stroke="#b26a00" stroke-width="1.2" fill="none"/>
+<path d="M428,707.0 V666.0 H362" fill="none" stroke="#b26a00" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#a)"/>
+<text x="436" y="660.0" class="g"></text>
+<text x="490" y="731.0" class="gn">no → defecto</text>
+<path d="M428,857.0 L486,877.0 L428,897.0 L370,877.0 Z" fill="#fff8e6" stroke="#b26a00"/>
+<text x="428" y="875.0" class="g" text-anchor="middle">¿pasan</text>
+<text x="428" y="888.0" class="g" text-anchor="middle">los casos?</text>
+<path d="M211.0,877.0 H370" stroke="#b26a00" stroke-width="1.2" fill="none"/>
+<path d="M428,857.0 V816.0 H362" fill="none" stroke="#b26a00" stroke-width="1.6" stroke-dasharray="6 4" marker-end="url(#a)"/>
+<text x="436" y="810.0" class="g"></text>
+<text x="490" y="881.0" class="gn">no → defecto</text>
+<text x="580" y="140" class="ch">QUÉ SE ENTREGA</text>
+<text x="930" y="140" class="ch">QUÉ SE REGISTRA</text>
+<text x="60" y="140" class="ch">FASE · QUÉ SE HACE</text>
+<path d="M210.0,1004 V1036" fill="none" stroke="#444" stroke-width="1.6" marker-end="url(#a)"/>
+<rect x="40" y="1038" width="340" height="40" rx="20" fill="#1d3557"/>
+<text x="210.0" y="1063" class="fin" text-anchor="middle">Programa terminado + PPS + PIP</text>
+<text x="580" y="1054" class="in2">Compromiso PSP Monitor: cumplimiento ≥ 80 % (registros completos y sincronizados)</text>
+<text x="580" y="1072" class="in2">Δ = (fin − inicio) − interrupciones · Defecto = tipo + fase inyectado + fase eliminado + minutos</text>
+</svg>

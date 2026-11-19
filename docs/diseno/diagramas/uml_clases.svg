@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="867" viewBox="0 0 1300 867" font-family="Segoe UI, Arial, sans-serif">
+<title>Diagrama de clases UML · Programa 1</title>
+<defs>
+<marker id="open" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0,0 L10,5 L0,10" fill="none" stroke="#444" stroke-width="1.4"/></marker>
+<marker id="tri" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#fff" stroke="#444"/></marker>
+<marker id="dia" viewBox="0 0 14 10" refX="1" refY="5" markerWidth="14" markerHeight="10" orient="auto"><path d="M1,5 L7,0 L13,5 L7,10 Z" fill="#444"/></marker>
+<style>.cn{font-weight:700;font-size:14px;fill:#fff;text-anchor:middle} .st{font-size:11px;fill:#fff;text-anchor:middle;font-style:italic}
+.m{font-family:Consolas, "DejaVu Sans Mono", monospace;font-size:12px;fill:#222} .lb{font-size:11px;fill:#555;font-style:italic}
+.t{font-size:18px;font-weight:700;fill:#1d3557} .lg{font-size:11.5px;fill:#333}</style></defs>
+<rect width="100%" height="100%" fill="#fbfcfe"/>
+<text x="40" y="34" class="t">Diagrama de clases (UML) · PSP0 Programa 1 — Media y desviación estándar</text>
+<g><rect x="40" y="60" width="140" height="94" rx="4" fill="#fff" stroke="#2f5d8a" stroke-width="1.6"/>
+<rect x="40" y="60" width="140" height="44" rx="4" fill="#2f5d8a"/>
+<text x="110" y="78" class="st">«entry point»</text>
+<text x="110" y="94" class="cn">Program</text>
+<line x1="40" y1="129" x2="180" y2="129" stroke="#2f5d8a"/>
+<text x="50" y="120" class="m">—</text>
+<text x="50" y="145" class="m">+Main(args): int</text>
+</g>
+<g><rect x="40" y="200" width="292" height="111" rx="4" fill="#fff" stroke="#b26a00" stroke-width="1.6"/>
+<rect x="40" y="200" width="292" height="44" rx="4" fill="#b26a00"/>
+<text x="186" y="218" class="st">«static»</text>
+<text x="186" y="234" class="cn">Aplicacion</text>
+<line x1="40" y1="286" x2="332" y2="286" stroke="#b26a00"/>
+<text x="50" y="260" class="m">+Exito: int = 0</text>
+<text x="50" y="277" class="m">+ErrorDatos: int = 1</text>
+<text x="50" y="302" class="m">+Ejecutar(args, entrada, salida): int</text>
+</g>
+<g><rect x="40" y="410" width="256" height="199" rx="4" fill="#fff" stroke="#2f5d8a" stroke-width="1.6"/>
+<rect x="40" y="410" width="256" height="30" rx="4" fill="#2f5d8a"/>
+<text x="168" y="428" class="cn">ConsolaUI</text>
+<line x1="40" y1="499" x2="296" y2="499" stroke="#2f5d8a"/>
+<text x="50" y="456" class="m">-_entrada: TextReader</text>
+<text x="50" y="473" class="m">-_salida: TextWriter</text>
+<text x="50" y="490" class="m">-Formato: string = "F2"</text>
+<text x="50" y="515" class="m">+ConsolaUI(entrada, salida)</text>
+<text x="50" y="532" class="m">+MostrarEncabezado(): void</text>
+<text x="50" y="549" class="m">+PedirRuta(): string</text>
+<text x="50" y="566" class="m">+MostrarResultado(ruta, r): void</text>
+<text x="50" y="583" class="m">+MostrarError(mensaje): void</text>
+<text x="50" y="600" class="m">-Numero(valor): string</text>
+</g>
+<g><rect x="420" y="60" width="270" height="128" rx="4" fill="#fff" stroke="#7a4f9a" stroke-width="1.6"/>
+<rect x="420" y="60" width="270" height="44" rx="4" fill="#7a4f9a"/>
+<text x="555" y="78" class="st">«static»</text>
+<text x="555" y="94" class="cn">LectorArchivoNumeros</text>
+<line x1="420" y1="129" x2="690" y2="129" stroke="#7a4f9a"/>
+<text x="430" y="120" class="m">—</text>
+<text x="430" y="145" class="m">+Leer(ruta): ListaEnlazada</text>
+<text x="430" y="162" class="m">+LeerLineas(lineas): ListaEnlazada</text>
+<text x="430" y="179" class="m">-Convertir(texto, linea): double</text>
+</g>
+<g><rect x="800" y="60" width="285" height="80" rx="4" fill="#fff" stroke="#9a3b3b" stroke-width="1.6"/>
+<rect x="800" y="60" width="285" height="30" rx="4" fill="#9a3b3b"/>
+<text x="942" y="78" class="cn">DatosInvalidosException</text>
+<line x1="800" y1="115" x2="1085" y2="115" stroke="#9a3b3b"/>
+<text x="810" y="106" class="m">+Linea: int?</text>
+<text x="810" y="131" class="m">+DatosInvalidosException(msg, linea)</text>
+</g>
+<g><rect x="420" y="300" width="300" height="128" rx="4" fill="#fff" stroke="#2e7d4f" stroke-width="1.6"/>
+<rect x="420" y="300" width="300" height="44" rx="4" fill="#2e7d4f"/>
+<text x="570" y="318" class="st">«static»</text>
+<text x="570" y="334" class="cn">CalculadoraEstadistica</text>
+<line x1="420" y1="369" x2="720" y2="369" stroke="#2e7d4f"/>
+<text x="430" y="360" class="m">+MinimoParaDesviacion: int = 2</text>
+<text x="430" y="385" class="m">+Media(datos): double</text>
+<text x="430" y="402" class="m">+DesviacionEstandar(datos): double</text>
+<text x="430" y="419" class="m">+Calcular(datos): ResultadoEstadistico</text>
+</g>
+<g><rect x="420" y="520" width="227" height="128" rx="4" fill="#fff" stroke="#2e7d4f" stroke-width="1.6"/>
+<rect x="420" y="520" width="227" height="44" rx="4" fill="#2e7d4f"/>
+<text x="534" y="538" class="st">«record»</text>
+<text x="534" y="554" class="cn">ResultadoEstadistico</text>
+<line x1="420" y1="623" x2="647" y2="623" stroke="#2e7d4f"/>
+<text x="430" y="580" class="m">+Cantidad: int</text>
+<text x="430" y="597" class="m">+Media: double</text>
+<text x="430" y="614" class="m">+DesviacionEstandar: double?</text>
+<text x="430" y="639" class="m">—</text>
+</g>
+<g><rect x="800" y="300" width="263" height="80" rx="4" fill="#fff" stroke="#9a3b3b" stroke-width="1.6"/>
+<rect x="800" y="300" width="263" height="30" rx="4" fill="#9a3b3b"/>
+<text x="932" y="318" class="cn">DatosInsuficientesException</text>
+<line x1="800" y1="355" x2="1063" y2="355" stroke="#9a3b3b"/>
+<text x="810" y="346" class="m">—</text>
+<text x="810" y="371" class="m">+DatosInsuficientesException(msg)</text>
+</g>
+<g><rect x="800" y="470" width="292" height="162" rx="4" fill="#fff" stroke="#2e7d4f" stroke-width="1.6"/>
+<rect x="800" y="470" width="292" height="44" rx="4" fill="#2e7d4f"/>
+<text x="946" y="488" class="st">«IEnumerable&lt;double&gt;»</text>
+<text x="946" y="504" class="cn">ListaEnlazada</text>
+<line x1="800" y1="590" x2="1092" y2="590" stroke="#2e7d4f"/>
+<text x="810" y="530" class="m">-_primero: Nodo?</text>
+<text x="810" y="547" class="m">-_ultimo: Nodo?</text>
+<text x="810" y="564" class="m">+Cantidad: int</text>
+<text x="810" y="581" class="m">+EstaVacia: bool</text>
+<text x="810" y="606" class="m">+Agregar(valor): void</text>
+<text x="810" y="623" class="m">+GetEnumerator(): IEnumerator&lt;double&gt;</text>
+</g>
+<g><rect x="800" y="700" width="147" height="97" rx="4" fill="#fff" stroke="#2e7d4f" stroke-width="1.6"/>
+<rect x="800" y="700" width="147" height="30" rx="4" fill="#2e7d4f"/>
+<text x="874" y="718" class="cn">Nodo</text>
+<line x1="800" y1="772" x2="947" y2="772" stroke="#2e7d4f"/>
+<text x="810" y="746" class="m">+Valor: double</text>
+<text x="810" y="763" class="m">+Siguiente: Nodo?</text>
+<text x="810" y="788" class="m">+Nodo(valor)</text>
+</g>
+<g><rect x="1130" y="180" width="140" height="94" rx="4" fill="#fff" stroke="#666" stroke-width="1.6"/>
+<rect x="1130" y="180" width="140" height="44" rx="4" fill="#666"/>
+<text x="1200" y="198" class="st">«.NET»</text>
+<text x="1200" y="214" class="cn">Exception</text>
+<line x1="1130" y1="249" x2="1270" y2="249" stroke="#666"/>
+<text x="1140" y="240" class="m">—</text>
+<text x="1140" y="265" class="m">+Message: string</text>
+</g>
+<path d="M110.0,154 L186.125,200" fill="none" stroke="#444" stroke-width="1.3" stroke-dasharray="6 4" marker-end="url(#open)"/>
+<text x="118.0" y="181.0" class="lb">«usa»</text>
+<path d="M186.125,311 L186.125,410" fill="none" stroke="#444" stroke-width="1.3" stroke-dasharray="6 4" marker-end="url(#open)"/>
+<text x="194.125" y="364.5" class="lb">«usa»</text>
+<path d="M332.25,230 L420,120" fill="none" stroke="#444" stroke-width="1.3" stroke-dasharray="6 4" marker-end="url(#open)"/>
+<text x="342.25" y="228" class="lb">«usa»</text>
+<path d="M332.25,270 L420,340" fill="none" stroke="#444" stroke-width="1.3" stroke-dasharray="6 4" marker-end="url(#open)"/>
+<text x="346.25" y="300" class="lb">«usa»</text>
+<path d="M296.0,520 L420,570" fill="none" stroke="#444" stroke-width="1.3" stroke-dasharray="6 4" marker-end="url(#open)"/>
+<text x="302.0" y="550" class="lb">«muestra»</text>
+<path d="M690.5,100 L800,100" fill="none" stroke="#444" stroke-width="1.3" stroke-dasharray="6 4" marker-end="url(#open)"/>
+<text x="696.5" y="94" class="lb">«lanza»</text>
+<path d="M690.5,178 L840,470" fill="none" stroke="#444" stroke-width="1.3" stroke-dasharray="6 4" marker-end="url(#open)"/>
+<text x="720.5" y="248" class="lb">«crea»</text>
+<path d="M569.75,428 L533.5,520" fill="none" stroke="#444" stroke-width="1.3" stroke-dasharray="6 4" marker-end="url(#open)"/>
+<text x="577.75" y="478.0" class="lb">«crea»</text>
+<path d="M719.5,340 L800,340" fill="none" stroke="#444" stroke-width="1.3" stroke-dasharray="6 4" marker-end="url(#open)"/>
+<text x="725.5" y="334" class="lb">«lanza»</text>
+<path d="M719.5,408 L800,510" fill="none" stroke="#444" stroke-width="1.3" stroke-dasharray="6 4" marker-end="url(#open)"/>
+<text x="727.5" y="448" class="lb">«recorre»</text>
+<path d="M946.125,632 L873.625,700" fill="none" stroke="#444" stroke-width="1.3" marker-end="url(#open)" marker-start="url(#dia)"/>
+<text x="956.125" y="670.0" class="lb">1 → 0..*</text>
+<path d="M1085.0,100 L1130,210" fill="none" stroke="#444" stroke-width="1.3" marker-end="url(#tri)"/>
+<path d="M1063.25,330 L1130,264" fill="none" stroke="#444" stroke-width="1.3" marker-end="url(#tri)"/>
+<g transform="translate(40,831)"><rect x="0" y="-14" width="12" height="12" fill="#2f5d8a"/><text x="18" y="-4" class="lg">Presentación</text>
+<rect x="120" y="-14" width="12" height="12" fill="#b26a00"/><text x="138" y="-4" class="lg">Aplicación</text>
+<rect x="230" y="-14" width="12" height="12" fill="#7a4f9a"/><text x="248" y="-4" class="lg">Infraestructura</text>
+<rect x="360" y="-14" width="12" height="12" fill="#2e7d4f"/><text x="378" y="-4" class="lg">Dominio</text>
+<rect x="460" y="-14" width="12" height="12" fill="#9a3b3b"/><text x="478" y="-4" class="lg">Excepciones</text>
+<text x="590" y="-4" class="lg">- - -▷ dependencia   ◆── composición   ──▷ herencia   + público   - privado</text></g>
+</svg>
